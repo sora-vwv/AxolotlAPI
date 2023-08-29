@@ -2,6 +2,17 @@ package axl.util;
 
 public class ArrayList<T> extends List<T> {
 
+    // добавляешь все значения из root в текущий ArrayList
+    public ArrayList(List<T> root) {
+    }
+
+    // изначальный размер массива (не ArrayList, а массива, через который будет реализвация)
+    public ArrayList(int initial) {
+    }
+
+    public ArrayList() {
+    }
+
     @Override
     public int size() {
         return 0;
