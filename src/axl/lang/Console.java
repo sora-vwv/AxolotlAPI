@@ -5,6 +5,10 @@ import java.util.Scanner;
 
 public final class Console {
 
+    public void print(boolean value) {
+        System.out.print(value);
+    }
+
     public void print(char value) {
         System.out.print(value);
     }
@@ -29,9 +33,11 @@ public final class Console {
         System.out.print(value);
     }
 
-    public void print(boolean value) { System.out.print(value); }
-
     public void print(Object value) {
+        System.out.print(value);
+    }
+
+    public void println(boolean value) {
         System.out.print(value);
     }
 
@@ -59,10 +65,6 @@ public final class Console {
         System.out.println(value);
     }
 
-    public void println(boolean value) {
-        System.out.print(value);
-    }
-
     public void println(Object value) {
         System.out.println(value);
     }
@@ -73,24 +75,24 @@ public final class Console {
 
     private Scanner scanner = new Scanner(System.in);
 
-    public String readLine() {
-        return scanner.nextLine();
-    }
-
     public int readInt() {
         return scanner.nextInt();
-    }
-
-    public double readDouble() {
-        return scanner.nextDouble();
     }
 
     public long readLong() {
         return scanner.nextLong();
     }
 
-    public BigDecimal readBigDecimal() {
-        return scanner.nextBigDecimal();
+    public double readDouble() {
+        return scanner.nextDouble();
     }
+
+    public String readLine() {
+        return scanner.nextLine();
+    }
+
+    // public BigDecimal readBigDecimal() {
+    //     return scanner.nextBigDecimal();
+    // }
 
 }
